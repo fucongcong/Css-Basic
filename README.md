@@ -65,10 +65,31 @@ body {background-color: #FF0000;}
 
 ##CSS样式
 ###颜色与背景
-- color
-- background-color
-- background-image
-- background-repeat
-- background-attachment
-- background-position
-- background
+- color    (字体颜色)
+	- color: #000;
+- background-color    (背景色)
+	- background-color: #006666;
+- background-image    (背景图像)
+	- background-image: url("demo.jpg");
+- background-repeat    (平铺背景图像)
+	- background-repeat:repeat-x (图像横向平铺)
+	- background-repeat:repeat-y (图像纵向平铺)
+	- background-repeat:repeat (图像横向和纵向都平铺)
+	- background-repeat:no-repeat (图像不平铺)
+- background-attachment    (固定背景图像)
+	－background-attachment:scroll　(非固定的)
+	－background-attachment:fixed  (图像是固定在屏幕上的	)
+- background-position    (放置背景图像)
+	- background-position:top right
+	- background-position:100px 100px
+	- background-position:50% 50% 
+- background    (缩写)
+	- background: #FFCC66 url("butterfly.gif") no-repeat fixed right bottom;
+	- background: #FFCC66 url("butterfly.gif") no-repeat; (如果省略某个属性不写出来，那么将自动为它取缺省值。)
+
+###字体
+- font-family (字体族)
+- font-style (字体样式)
+- font-weight (字体浓淡)
+- font-size (字体大小)
+- font (缩写)
