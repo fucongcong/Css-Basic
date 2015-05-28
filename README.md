@@ -93,3 +93,10 @@ body {background-color: #FF0000;}
 - font-weight (字体浓淡)
 - font-size (字体大小)
 - font (缩写)
+
+###文本
+- text-indent(文本缩进)
+- text-align(文本对齐)
+- text-decoration(文本装饰)
+- letter-spacing(字符间距)
+- text-transform(文本转换)
