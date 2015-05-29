@@ -100,3 +100,45 @@ body {background-color: #FF0000;}
 - text-decoration(文本装饰)
 - letter-spacing(字符间距)
 - text-transform(文本转换)
+
+###链接
+
+####伪类是什么？
+伪类令你可以在为HTML元素定义CSS属性的时候将条件和事件考虑在内。
+
+- a:link (未访问过的链接)
+- a:visited(已访问过的链接)
+- a:active(获得当前焦点的链接)
+- a:hover (鼠标悬停的链接)
+
+###列表
+－list-style
+
+###表格
+
+- border 
+- border-collapse (边框折叠为单一边框)
+
+##CSS元素选择器
+
+###类选择器
+###id选择器
+###后代选择器
+###子元素选择器
+
+##组织元素div与span
+##CSS盒模型
+
+###盒模型
+###边框
+###外边距
+###内边距
+
+##CSS定位
+###定位原理
+###绝对定位
+###相对定位
+
+##CSS浮动与层叠
+###浮动
+###层叠
