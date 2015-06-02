@@ -122,13 +122,98 @@ body {background-color: #FF0000;}
 ##CSS元素选择器
 
 ###类选择器
+- CSS 类选择器
+- CSS 多类选择器
+
+ ````
+.title {color:red;}
+.big { font-size:50px; }
+
+<h1 class="title big">学习PHP请到 <a href="#">系统学</a> 官网</h1>
+````
+
 
 ###id选择器
 
+####ID 选择器
+- 只能在文档中使用一次
+- ID 选择器不能结合使用
+- 区分大小写
+
+ ````
+#title {color:red;}
+
+<h1 id="title">学习PHP请到 <a href="#">系统学</a> 官网</h1>
+````
+
 ###后代选择器
+
+后代选择器可以选择作为某元素后代的元素。
+
+ ````
+h1 a {color:red;}
+.title a {color:red;}
+
+<h1 class="title">学习PHP请到 <a href="#">系统学</a> 官网</h1>
+
+````
+
 ###子元素选择器
 
+与后代选择器相比，子元素选择器只能选择作为某元素子元素的元素。
+
+ ````
+h1 > a {color:red;}
+.title > a {color:red;}
+
+h1 > p > a {color:green;}
+
+<h1 class="title">学习PHP请到 <a href="#">系统学</a> 官网</h1>
+<h1 class="title">学习PHP请到 <p><a href="#">系统学</a></p>官网</h1>
+
+````
+
 ##组织元素div与span
+
+###span组织元素
+span元素可以说是一种中性元素，因为它不对文档本身添加任何东西。但是与CSS结合使用的话，span可以对文档中的部分文本增添视觉效果.
+
+ ````
+.text-danger {color:red;}
+
+<h1 class="title">学习 <span class="text-danger">PHP</span> 请到 <span class="text-danger">系统学</span> 官网</h1>
+
+````
+
+###div组织元素
+span的使用局限在一个块元素内，而div可以被用来组织一个或多个块元素.
+
+
+ ````
+.text-danger {color:red;}
+
+.content-1 {
+	
+	background-color:bule;	
+	height:200px;
+}
+
+.content-2 {
+	
+	background-color:green;
+	height:400px;	
+}
+
+<div class="content-1">
+<h1 class="title">学习 <span class="text-danger">PHP</span> 请到 <span class="text-danger">系统学</span> 官网</h1>
+</div>
+
+<div class="content-2">
+<h1 class="title">学习 <span class="text-danger">PHP</span> 请到 <span class="text-danger">系统学</span> 官网</h1>
+<p>HTML＋CSS课程</p>
+</div>
+````
+
 ##CSS盒模型
 
 ###盒模型
