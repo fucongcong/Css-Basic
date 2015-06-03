@@ -217,15 +217,93 @@ span的使用局限在一个块元素内，而div可以被用来组织一个或�
 ##CSS盒模型
 
 ###盒模型
+CSS中的盒状模型（box model）用于描述一个为HTML元素形成的矩形盒子。盒状模型还涉及为各个元素调整外边距（margin）、边框（border）、内边距（padding）和内容的具体操作。下图显示了盒状模型的结构：
+
+![盒模型](hezi.gif)
+
+这个例子包含了两个元素：h1和p。这两个元素的盒状模型如下图所示：
+
+![盒模型](gezu-demo.gif)
+
+
 ###边框
+
+- border-width (边框宽度)
+- border-color (边框颜色)
+- border-style (边框样式)
+
 ###外边距
+####为元素设置外边距
+一个元素的边框到相邻元素(或者文档边界)之间的距离。
+
+````
+margin-top:100px;
+margin-right:40px;
+margin-bottom:10px;
+margin-left:70px;
+
+//缩写
+margin: 100px 40px 10px 70px;
+````
 ###内边距
+####为元素设置内边距
+内边距并不影响元素间的距离，它只定义元素的内容与元素边框之间的距离。
+
+````
+padding-top:20px;
+padding-right:20px;
+padding-bottom:20px;
+padding-left:80px;
+
+padding: 20px 20px 20px 80px;
+````
 
 ##CSS定位
 ###定位原理
+把浏览器窗口想象成一个坐标系统：
+
+CSS定位的原理是：你可以将任何盒子（box）放置在坐标系统的任何位置上。
+
 ###绝对定位
+一个采用绝对定位的元素不获得任何空间。这意味着：该元素在被定位后不会留下空位。
+
+要对元素进行绝对定位，应将position属性的值设为absolute。接着，你可以通过属性left、right、top和bottom来设定将盒子放置在哪里。
+
 ###相对定位
+
+要对元素进行相对定位，应将position属性的值设为relative。
+
+采用相对定位的元素，其位置是相对于它在文档中的原始位置计算而来的。
 
 ##CSS浮动与层叠
 ###浮动
+
+- float
+
+````
+.picture {
+	
+	float:left;
+	width:100px;
+}
+
+.clear-fix {
+	
+	clear:both;
+}
+
+<div class="picture"><img src="test.png" /></div>
+
+<h1>浮动效果</h1>
+<p class="clear-fix">这里是正文这里是正文这里是正文这里是正文这里是正文这里是正文
+这里是正文这里是正文这里是正文这里是正文这里是正文这里是正文这里是正文这里是正文这里是正文
+这里是正文这里是正文这里是正文这里是正文这里是正文这里是正文这里是正文
+</p>
+````
+
 ###层叠
+
+- z-index
+CSS可以处理高度、宽度、深度三个维度。
+
+![层叠](zinex.gif)
